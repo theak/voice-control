@@ -3,7 +3,7 @@
 const SpeechGrammarList = window.SpeechGrammarList || window.webkitSpeechGrammarList;
 */
 var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-var ok = new Audio('sounds/nova_ok.mp3');
+
 
 var recognition = new SpeechRecognition();
 /*const speechRecognitionList = new SpeechGrammarList();
@@ -23,7 +23,7 @@ recognition.onresult = (event) => {
     console.log(transcript);
     for (var hook in webhooks) {
         if (transcript.indexOf(hook) > -1) {
-            ok.play();
+            window.sounds['ok'].play();
             return trigger_webhook(hook);
         }
     }

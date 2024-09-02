@@ -16,14 +16,9 @@ if (room) {
 
 }
 
-
 const commands = {
     "time": speakCurrentTime
 };
-
-$(document).ready(function() {
-    $('#button').click(); // Start hotword recognition
-});
 
 function trigger_webhook(webhook) {
 $.ajax({
