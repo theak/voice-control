@@ -1,8 +1,8 @@
 var webhooks = {
-    "living room": "http://192.168.0.155:8123/api/webhook/living-room-remote-toggle-lights-on-a-oOfKjGx5T5EOg7Igo0LdsE7e",
-    "family room": "http://192.168.0.155:8123/api/webhook/family-room-toggle-lights-with-a-on-remote-HgVsng-rw8KjbC3B2wQ8BKfl",
-    "bedroom": "http://192.168.0.155:8123/api/webhook/bedroom-remote-controls-light-DXkiWiOggCOM99FAuRgatDXS",
-    "kitchen": "http://192.168.0.155:8123/api/webhook/kitchen-toggle-light-with-captouch-dXxqXL1n8J6I5SFQFh-zYoLt",
+    "living room": "https://192.168.0.155:8443/api/webhook/living-room-remote-toggle-lights-on-a-oOfKjGx5T5EOg7Igo0LdsE7e",
+    "family room": "https://192.168.0.155:8443/api/webhook/family-room-toggle-lights-with-a-on-remote-HgVsng-rw8KjbC3B2wQ8BKfl",
+    "bedroom": "https://192.168.0.155:8443/api/webhook/bedroom-remote-controls-light-DXkiWiOggCOM99FAuRgatDXS",
+    "kitchen": "https://192.168.0.155:8443/api/webhook/kitchen-toggle-light-with-captouch-dXxqXL1n8J6I5SFQFh-zYoLt",
 };
 const params = new URLSearchParams(window.location.search);
 const room = params.get("room");
