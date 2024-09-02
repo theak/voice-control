@@ -1,5 +1,5 @@
 const audioOutputSelect = document.getElementById('audioOutputSelect');
-const preferredDevices = ["- MacBook Pro Speakers"]; // Change this
+const preferredDevices = ["Anker"];
 
 function setOutputDevice(selectedDeviceId) {
     if (typeof window.sounds.porcupine.setSinkId !== 'undefined') {
@@ -26,7 +26,7 @@ function populateAudioOutputDevices(devices) {
             option.text = device.label || `Speaker ${audioOutputSelect.length + 1}`;
             preferredDevices.forEach(label => {
                 if (device.label.indexOf(label) > -1) {
-                    console.log("YOOO");
+                    console.log("SELECTING DEVICE:");
                     console.log(device);
                     option.selected = true;
                     setOutputDevice(device.deviceId);
