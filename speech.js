@@ -2,10 +2,10 @@
       "#JSGF V1.0; grammar commands; public <command> = turn on living room | azure | beige | bisque | black | blue | brown | chocolate | coral | crimson | cyan | fuchsia | ghostwhite | gold | goldenrod | gray | green | indigo | ivory | khaki | lavender | lime | linen | magenta | maroon | moccasin | navy | olive | orange | orchid | peru | pink | plum | purple | red | salmon | sienna | silver | snow | tan | teal | thistle | tomato | turquoise | violet | white | yellow ;";
 const SpeechGrammarList = window.SpeechGrammarList || window.webkitSpeechGrammarList;
 */
-const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-const ok = new Audio('/sounds/nova_ok.mp3');
+var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+var ok = new Audio('sounds/nova_ok.mp3');
 
-const recognition = new SpeechRecognition();
+var recognition = new SpeechRecognition();
 /*const speechRecognitionList = new SpeechGrammarList();
 speechRecognitionList.addFromString(grammar, 1);
 recognition.grammars = speechRecognitionList;*/

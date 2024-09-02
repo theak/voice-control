@@ -1,4 +1,4 @@
-const webhooks = {
+var webhooks = {
     "living room": "http://192.168.0.155:8123/api/webhook/living-room-remote-toggle-lights-on-a-oOfKjGx5T5EOg7Igo0LdsE7e",
     "family room": "http://192.168.0.155:8123/api/webhook/family-room-toggle-lights-with-a-on-remote-HgVsng-rw8KjbC3B2wQ8BKfl",
     "bedroom": "http://192.168.0.155:8123/api/webhook/bedroom-remote-controls-light-DXkiWiOggCOM99FAuRgatDXS",
