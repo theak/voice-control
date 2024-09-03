@@ -1,1 +1,1 @@
-readme
+Generated from react build
