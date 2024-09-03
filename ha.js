@@ -3,6 +3,7 @@ var webhooks = {
     "family room": "https://192.168.0.155:8443/api/webhook/family-room-toggle-lights-with-a-on-remote-HgVsng-rw8KjbC3B2wQ8BKfl",
     "bedroom": "https://192.168.0.155:8443/api/webhook/bedroom-remote-controls-light-DXkiWiOggCOM99FAuRgatDXS",
     "kitchen": "https://192.168.0.155:8443/api/webhook/kitchen-toggle-light-with-captouch-dXxqXL1n8J6I5SFQFh-zYoLt",
+    "phone": "https://192.168.0.155:8443/api/webhook/find-phone-from-switches-poZF6hSPHzmB8FID7fTRuGf-"
 };
 const params = new URLSearchParams(window.location.search);
 const room = params.get("room");
